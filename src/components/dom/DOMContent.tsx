@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { portfolioData } from '../../data/content';
+import { imagePaths } from '../../data/imagePaths';
 
 const iconForLabel = (label: string) => {
     const normalized = label.toLowerCase();
     const iconMap: Record<string, string> = {
-        github: `${import.meta.env.BASE_URL}images/github-icon.svg`,
-        linkedin: `${import.meta.env.BASE_URL}images/linkedin-icon.svg`,
-        email: `${import.meta.env.BASE_URL}images/email-icon.svg`,
+        github: imagePaths.githubIcon,
+        linkedin: imagePaths.linkedinIcon,
+        email: imagePaths.emailIcon,
     };
 
     const src = iconMap[normalized];
@@ -73,7 +74,7 @@ const DOMContent: React.FC = () => {
                         ))}
                     </div>
                     <div className="image-panel" data-reveal>
-                        <img className="about-image" src={`${import.meta.env.BASE_URL}images/about-me.jpeg`} alt="About me" />
+                        <img className="about-image" src={imagePaths.aboutMe} alt="About me" />
                     </div>
                 </div>
             </section>
@@ -87,7 +88,7 @@ const DOMContent: React.FC = () => {
                         ))}
                     </div>
                     <div className="image-panel" data-reveal>
-                        <img className="about-image" src={`${import.meta.env.BASE_URL}images/passion.jpeg`} alt="Passion illustration" />
+                        <img className="about-image" src={imagePaths.passion} alt="Passion illustration" />
                     </div>
                 </div>
             </section>
@@ -100,7 +101,9 @@ const DOMContent: React.FC = () => {
                             <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>{text}</p>
                         ))}
                     </div>
-                    <div />
+                    <div className="image-panel" data-reveal>
+                        <img className="about-image" src={imagePaths.beauty} alt="Beauty illustration" />
+                    </div>
                 </div>
             </section>
 
@@ -112,7 +115,9 @@ const DOMContent: React.FC = () => {
                             <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>{text}</p>
                         ))}
                     </div>
-                    <div />
+                    <div className="image-panel" data-reveal>
+                        <img className="about-image" src={imagePaths.brand} alt="Brand illustration" />
+                    </div>
                 </div>
             </section>
 
