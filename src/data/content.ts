@@ -2,21 +2,21 @@ export const portfolioData = {
     hero: {
         name: "Aditi Shukla",
         role: "MBA Student at NMIMS",
-        description: "A Learner at Heart, an Engineer in Practice and a Future Leader in the making.",
+        description: "A Learner at Heart, an Engineer in Practice and a Future Leader in the making",
         year: "2026"
     },
 
     about: {
-        title: "About me",
+        title: "Inner Glow, Outer Impact",
         paragraphs: [
             "Hi, I'm Aditi Shukla. I'm an MBA student at NMIMS with a curious mindset and a passion for learning, solving problems, and taking on new challenges. I enjoy collaborating with people, exploring innovative ideas, and constantly pushing myself beyond my comfort zone.",
-            "Outside of academics, I love playing the harmonium, listening to music, and participating in activities that help me grow both personally and professionally.",
+            "Outside of academics, I love playing the harmonium, listening to music and participating in activities that help me grow both personally and professionally.",
             "To me, beauty is about authenticity. It's the confidence to embrace who you are, the courage to keep evolving, and the kindness to leave every person and every place a little better than you found it. I believe true beauty is reflected in our values, our actions, and the positive impact we create."
         ]
     },
 
     passions: {
-        title: "Passions",
+        title: "Passions, Purpose, Progress",
         paragraphs: [
             "Outside academics, I'm passionate about continuous learning and personal growth. I enjoy exploring new ideas, meeting people from diverse backgrounds, and understanding different perspectives, as every interaction teaches me something new.",
             "Music is a big part of who I am. Playing the harmonium and listening to music help me recharge and stay connected with myself. I also love exploring new places, experiencing different cultures, and creating memories through travel.",
@@ -25,16 +25,16 @@ export const portfolioData = {
     },
 
     beauty: {
-        title: "What Beauty Means to You",
+        title: "Beauty, Defined My Way",
         paragraphs: [
             "To me, beauty is a harmony of both inner and outer beauty they go hand in hand. Inner beauty is reflected in our values, confidence, kindness, and resilience, while outer beauty is how we choose to express our individuality and present ourselves to the world.",
             "I believe true confidence comes when both are nurtured together. While inner beauty shapes who we are, outer beauty allows us to express that confidence authentically.",
-            "This is why I connect with L'Oréal's philosophy of \"Because You're Worth It.\" To me, it is more than a tagline it is a reminder that every individual deserves to feel confident, valued, and empowered. L'Oréal's products don't define our beauty; they help us express it with confidence. When our inner strength is complemented by our outer expression, beauty becomes a reflection of our authentic selves."
+            "This is why I connect with L'Oréal's philosophy of \"Because You're Worth It.\" To me, it is more than a tagline it is a reminder that every individual deserves to feel confident, valued, and empowered. L'Oréal's products don't define our beauty, they help us express it with confidence. When our inner strength is complemented by our outer expression, beauty becomes a reflection of our authentic selves."
         ]
     },
 
     brand: {
-        title: "The Brand I Relate To Most",
+        title: "Generations of Trust",
         paragraphs: [
             "The L'Oréal brand I relate to the most is Garnier because it's a brand I've grown up with.",
             "I was raised surrounded by strong women, and from my grandmother and aunts to my mother and now me, Garnier has been a trusted part of our lives. Over the years, I haven't just seen the brand evolve I feel I've evolved with it through different stages of my life.",
@@ -43,7 +43,7 @@ export const portfolioData = {
     },
 
     strengthsWeaknesses: {
-        title: "Strengths & Weaknesses",
+        title: "The Honest Version",
         strength: {
             label: "Strength",
             text: "I think one of my biggest strengths is that I'm genuinely curious. I enjoy learning from people, experiences, and even difficult situations. I'm someone who naturally looks for solutions instead of dwelling on problems, and I like creating a positive environment wherever I work."
@@ -55,7 +55,7 @@ export const portfolioData = {
     },
 
     memory: {
-        title: "A Memorable Experience",
+        title: "Lessons along the Way",
         paragraphs: [
             "If I had to describe my journey in one sentence, I'd say I've always been a learner.",
             "Whether it was learning the harmonium as a child, adapting to life in different cities, stepping into the corporate world, or now beginning my MBA, I've always embraced new experiences with curiosity.",

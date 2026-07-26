@@ -45,10 +45,10 @@ const renderHighlightedParagraph = (text: string, highlights: string[]) => {
 };
 
 const sectionHighlights: Record<string, string[]> = {
-    about: ['MBA student at NMIMS', 'harmonium', 'outer beauty'],
-    passions: ['continuous learning', 'personal growth', 'new places'],
-    beauty: ['inner beauty', 'outer beauty', "Because You're Worth It"],
-    brand: ['Garnier', 'strong women', 'Take Care'],
+    about: ['MBA student at NMIMS', 'grow both personally and professionally', 'beauty is about authenticity'],
+    passions: ['continuous learning', 'personal growth', '', 'Music'],
+    beauty: ['individuality', 'L\'Oréal\'s products don\'t define our beauty, they help us express it with confidence', "Because You're Worth It"],
+    brand: ['Garnier', 'strong women', 'Garnier\'s "Take Care"'],
     strengths: ['genuinely curious', 'positive environment', 'learn and improve'],
     memory: ['always been a learner', 'new experiences', 'fresh perspective'],
 };
