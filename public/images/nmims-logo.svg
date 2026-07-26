@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" role="img" aria-label="SVKM's NMIMS logo">
+  <rect width="320" height="120" fill="none"/>
+  <g transform="translate(0 8)">
+    <path d="M16 0h78a14 14 0 0 1 14 14v80a14 14 0 0 1-14 14H16a14 14 0 0 1-14-14V14A14 14 0 0 1 16 0Z" fill="#424242"/>
+    <path d="M18 4h74a10 10 0 0 1 10 10v64a10 10 0 0 1-10 10H18a10 10 0 0 1-10-10V14a10 10 0 0 1 10-10Z" fill="#ededed"/>
+    <path d="M19 10h48v40H19Z" fill="#424242"/>
+    <path d="M19 54h48v26H19Z" fill="#d62f3f"/>
+    <path d="M19 80h48v14H19Z" fill="#424242"/>
+    <path d="M92 10h20v56H92Z" fill="#424242"/>
+    <path d="M112 10h22l18 30v26l-18 30H112V10Z" fill="#424242"/>
+    <path d="M134 10h22v86H134Z" fill="#424242"/>
+  </g>
+  <text x="110" y="38" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#121212">SVKM'S</text>
+  <text x="110" y="68" font-family="Georgia, serif" font-size="44" font-weight="700" fill="#121212">NMIMS</text>
+  <text x="110" y="92" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#4d4d4d">Deemed to be UNIVERSITY</text>
+</svg>

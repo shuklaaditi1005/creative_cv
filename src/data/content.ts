@@ -1,7 +1,7 @@
 export const portfolioData = {
     hero: {
         name: "Aditi Shukla",
-        role: "MBA Student",
+        role: "MBA Student, at NMIMS",
         description: "A learner at heart, an engineer in practice, and a future leader in the making.",
         year: "2026"
     },
