@@ -139,17 +139,7 @@ section.is-visible::after {
     transform: translateX(100%);
 }
 
-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(120deg, rgba(232, 198, 191, 0.12), transparent 48%, rgba(196, 120, 111, 0.08));
-    pointer-events: none;
-    z-index: -1;
-}
-
-section::before {
-    content: "";
+.section-accent-line {
     position: absolute;
     top: 1.2rem;
     left: 1.2rem;
@@ -158,6 +148,7 @@ section::before {
     border-radius: 999px;
     background: linear-gradient(90deg, var(--accent-strong), var(--accent));
     opacity: 0.9;
+    pointer-events: none;
 }
 
 #intro {
@@ -224,9 +215,16 @@ section::before {
 }
 
 .hero-bottom .desc {
-    max-width: 320px;
+    flex: 1 1 auto;
     font-size: 0.92rem;
     line-height: 1.6;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+}
+
+.hero-bottom .year {
+    flex: 0 0 auto;
 }
 
 .hero-bottom .year {
@@ -274,6 +272,26 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.image-panel {
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 2rem;
+    border: 1px solid rgba(255,255,255,0.7);
+    box-shadow: 0 30px 80px rgba(17, 24, 39, 0.06);
+    background: rgba(255,255,255,0.5);
+    object-fit: cover;
+    aspect-ratio: 4 / 5;
+    backdrop-filter: blur(16px);
 }
 
 .skills-tools-grid {

@@ -58,7 +58,9 @@ const DOMContent: React.FC = () => {
                             <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>{text}</p>
                         ))}
                     </div>
-                    <div />
+                    <div className="image-panel" data-reveal>
+                        <img className="about-image" src={`${import.meta.env.BASE_URL}images/about-me.png`} alt="About me" />
+                    </div>
                 </div>
             </section>
 
