@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Soft blush background with rounded corners -->
+  <rect width="512" height="512" rx="128" fill="#EACAC8" />
+  
+  <!-- Elegant 'A' Monogram -->
+  <path d="M256 120 L130 400 H200 L226 330 H286 L312 400 H382 Z M256 210 L271 275 H241 Z" fill="#4A4A4A" />
+  
+  <!-- Minimalist aesthetic sparkle -->
+  <path d="M370 180 C370 150 390 140 410 140 C390 140 370 130 370 100 C370 130 350 140 330 140 C350 140 370 150 370 180 Z" fill="#FFFFFF" />
+</svg>
