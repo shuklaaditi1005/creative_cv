@@ -16,8 +16,8 @@ const DOMContent: React.FC = () => {
     return (
         <div className="dom-content">
 
-            <section id="intro">
-                <div className="hero-title">{hero.pageTitle}</div>
+            <section id="intro" className="hero-panel">
+                <div className="hero-badge">Creative portfolio • story-driven identity</div>
                 <div className="hero-sub">
                     <div className="name">{hero.name}</div>
                     <div className="role">{hero.role}</div>
