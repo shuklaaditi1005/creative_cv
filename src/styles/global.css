@@ -180,6 +180,7 @@ section.is-visible::after {
 .hero-badge {
     display: inline-flex;
     align-self: flex-start;
+    margin-left: 0.16rem;
     padding: 0.65rem 1rem;
     border-radius: 999px;
     border: 1px solid rgba(255, 255, 255, 0.6);
@@ -230,10 +231,10 @@ section.is-visible::after {
     height: 52px;
     object-fit: contain;
     border-radius: 0.9rem;
-    background: rgba(255, 255, 255, 0.85);
-    padding: 0.45rem;
-    box-shadow: 0 8px 20px rgba(17, 24, 39, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.65);
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    border: none;
 }
 
 .hero-sub .name {

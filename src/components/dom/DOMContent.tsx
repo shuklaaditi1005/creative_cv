@@ -54,7 +54,7 @@ const DOMContent: React.FC = () => {
         <div className="dom-content">
 
             <section id="intro" className="hero-panel">
-                <div className="hero-badge" data-reveal>A Creative CV • story-driven identity</div>
+                <div className="hero-badge" data-reveal>A Creative CV</div>
                 <div className="hero-top-right" data-reveal>
                     <img className="brand-logo" src={imagePaths.nmimsLogo} alt="NMIMS logo" />
                     <img className="brand-logo" src={imagePaths.lorealLogo} alt="L'Oréal logo" />
