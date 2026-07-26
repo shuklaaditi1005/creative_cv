@@ -213,6 +213,7 @@ section.is-visible::after {
 .hero-sub .name {
     font-weight: 600;
     color: var(--text-dark);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
 }
 
 .hero-sub .role {
