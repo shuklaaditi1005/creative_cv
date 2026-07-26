@@ -1,6 +1,20 @@
 import React, { useEffect } from 'react';
 import { portfolioData } from '../../data/content';
 
+const iconForLabel = (label: string) => {
+    const normalized = label.toLowerCase();
+    const iconMap: Record<string, string> = {
+        github: `${import.meta.env.BASE_URL}images/github-icon.svg`,
+        linkedin: `${import.meta.env.BASE_URL}images/linkedin-icon.svg`,
+        email: `${import.meta.env.BASE_URL}images/email-icon.svg`,
+    };
+
+    const src = iconMap[normalized];
+    if (!src) return null;
+
+    return <img className="link-icon" src={src} alt={`${label} icon`} />;
+};
+
 const DOMContent: React.FC = () => {
     useEffect(() => {
         const revealItems = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'));
@@ -15,8 +29,8 @@ const DOMContent: React.FC = () => {
                 });
             },
             {
-                threshold: 0.18,
-                rootMargin: '0px 0px -6% 0px',
+                threshold: 0.03,
+                rootMargin: '0px 0px 20% 0px',
             }
         );
 
@@ -39,7 +53,7 @@ const DOMContent: React.FC = () => {
         <div className="dom-content">
 
             <section id="intro" className="hero-panel">
-                <div className="hero-badge" data-reveal>Creative portfolio • story-driven identity</div>
+                <div className="hero-badge" data-reveal>A Creative CV • story-driven identity</div>
                 <div className="hero-sub" data-reveal>
                     <div className="name">{hero.name}</div>
                     <div className="role">{hero.role}</div>
@@ -59,7 +73,7 @@ const DOMContent: React.FC = () => {
                         ))}
                     </div>
                     <div className="image-panel" data-reveal>
-                        <img className="about-image" src={`${import.meta.env.BASE_URL}images/about-me.png`} alt="About me" />
+                        <img className="about-image" src={`${import.meta.env.BASE_URL}images/about-me.jpeg`} alt="About me" />
                     </div>
                 </div>
             </section>
@@ -129,7 +143,8 @@ const DOMContent: React.FC = () => {
                         <div className="closing-links">
                             {socialLinks.map((link, idx) => (
                                 <a key={idx} href={link.url} target="_blank" rel="noopener noreferrer" data-reveal style={{ transitionDelay: `${0.1 + idx * 0.08}s` }}>
-                                    {link.label}
+                                    {iconForLabel(link.label)}
+                                    <span>{link.label}</span>
                                 </a>
                             ))}
                         </div>

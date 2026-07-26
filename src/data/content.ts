@@ -65,7 +65,8 @@ export const portfolioData = {
     },
 
     socialLinks: [
-        { label: "LinkedIn", url: "#" },
-        { label: "Email", url: "shuklaaditi1005@gmail.com" }
+        { label: "GitHub", url: "https://github.com/shuklaaditi1005" },
+        { label: "LinkedIn", url: "https://www.linkedin.com/in/aditi-shukla-1005/" },
+        { label: "Email", url: "mailto:shuklaaditi1005@gmail.com" }
     ]
 };
