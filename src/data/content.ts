@@ -27,9 +27,9 @@ export const portfolioData = {
     beauty: {
         title: "What Beauty Means to You",
         paragraphs: [
-            "To me, beauty is a harmony of both inner and outer beauty—they go hand in hand. Inner beauty is reflected in our values, confidence, kindness, and resilience, while outer beauty is how we choose to express our individuality and present ourselves to the world.",
+            "To me, beauty is a harmony of both inner and outer beauty they go hand in hand. Inner beauty is reflected in our values, confidence, kindness, and resilience, while outer beauty is how we choose to express our individuality and present ourselves to the world.",
             "I believe true confidence comes when both are nurtured together. While inner beauty shapes who we are, outer beauty allows us to express that confidence authentically.",
-            "This is why I connect with L'Oréal's philosophy of \"Because You're Worth It.\" To me, it is more than a tagline—it is a reminder that every individual deserves to feel confident, valued, and empowered. L'Oréal's products don't define our beauty; they help us express it with confidence. When our inner strength is complemented by our outer expression, beauty becomes a reflection of our authentic selves."
+            "This is why I connect with L'Oréal's philosophy of \"Because You're Worth It.\" To me, it is more than a tagline it is a reminder that every individual deserves to feel confident, valued, and empowered. L'Oréal's products don't define our beauty; they help us express it with confidence. When our inner strength is complemented by our outer expression, beauty becomes a reflection of our authentic selves."
         ]
     },
 
@@ -37,8 +37,8 @@ export const portfolioData = {
         title: "The Brand I Relate To Most",
         paragraphs: [
             "The L'Oréal brand I relate to the most is Garnier because it's a brand I've grown up with.",
-            "I was raised surrounded by strong women, and from my grandmother and aunts to my mother and now me, Garnier has been a trusted part of our lives. Over the years, I haven't just seen the brand evolve—I feel I've evolved with it through different stages of my life.",
-            "Garnier's \"Take Care\" philosophy resonates deeply with me. It reflects my belief that beauty is about caring for yourself while also being mindful of the people and the world around you. For me, Garnier is more than a beauty brand—it's a legacy of trust, care, and confidence that's been passed down through generations."
+            "I was raised surrounded by strong women, and from my grandmother and aunts to my mother and now me, Garnier has been a trusted part of our lives. Over the years, I haven't just seen the brand evolve I feel I've evolved with it through different stages of my life.",
+            "Garnier's \"Take Care\" philosophy resonates deeply with me. It reflects my belief that beauty is about caring for yourself while also being mindful of the people and the world around you. For me, Garnier is more than a beauty brand it's a legacy of trust, care, and confidence that's been passed down through generations."
         ]
     },
 
@@ -59,7 +59,7 @@ export const portfolioData = {
         paragraphs: [
             "If I had to describe my journey in one sentence, I'd say I've always been a learner.",
             "Whether it was learning the harmonium as a child, adapting to life in different cities, stepping into the corporate world, or now beginning my MBA, I've always embraced new experiences with curiosity.",
-            "One memory that has stayed with me is from a Sunday spiritual gathering, where my aunt unexpectedly asked me to play the harmonium and sing in front of everyone. I was nervous, but I took the opportunity—and the appreciation I received reminded me that growth often begins just outside our comfort zone.",
+            "One memory that has stayed with me is from a Sunday spiritual gathering, where my aunt unexpectedly asked me to play the harmonium and sing in front of everyone. I was nervous, but I took the opportunity and the appreciation I received reminded me that growth often begins just outside our comfort zone.",
             "I also love exploring new places, not just for the destinations but for the people, cultures, and stories they introduce me to. Every new experience leaves me with a fresh perspective, which is why I always ask myself, \"What can I learn from this?\""
         ]
     },

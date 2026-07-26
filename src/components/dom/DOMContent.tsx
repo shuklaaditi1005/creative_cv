@@ -16,6 +16,43 @@ const iconForLabel = (label: string) => {
     return <img className="link-icon" src={src} alt={`${label} icon`} />;
 };
 
+const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+const renderHighlightedParagraph = (text: string, highlights: string[]) => {
+    const validHighlights = highlights
+        .filter(Boolean)
+        .map((value) => value.trim())
+        .sort((a, b) => b.length - a.length);
+
+    if (!validHighlights.length) {
+        return text;
+    }
+
+    const regex = new RegExp(`(${validHighlights.map(escapeRegExp).join('|')})`, 'gi');
+    const fragments = text.split(regex);
+
+    return (
+        <>
+            {fragments.map((fragment, idx) => {
+                const match = validHighlights.find(
+                    (highlight) => fragment.toLowerCase() === highlight.toLowerCase()
+                );
+
+                return match ? <strong key={idx}>{fragment}</strong> : <React.Fragment key={idx}>{fragment}</React.Fragment>;
+            })}
+        </>
+    );
+};
+
+const sectionHighlights: Record<string, string[]> = {
+    about: ['MBA student at NMIMS', 'harmonium', 'outer beauty'],
+    passions: ['continuous learning', 'personal growth', 'new places'],
+    beauty: ['inner beauty', 'outer beauty', "Because You're Worth It"],
+    brand: ['Garnier', 'strong women', 'Take Care'],
+    strengths: ['genuinely curious', 'positive environment', 'learn and improve'],
+    memory: ['always been a learner', 'new experiences', 'fresh perspective'],
+};
+
 const DOMContent: React.FC = () => {
     useEffect(() => {
         const revealItems = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'));
@@ -77,7 +114,9 @@ const DOMContent: React.FC = () => {
                     <div className="text-column">
                         <h2 data-reveal>{about.title}</h2>
                         {about.paragraphs.map((text, idx) => (
-                            <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>{text}</p>
+                            <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>
+                                {renderHighlightedParagraph(text, sectionHighlights.about)}
+                            </p>
                         ))}
                     </div>
                     <div className="image-panel" data-reveal>
@@ -91,7 +130,9 @@ const DOMContent: React.FC = () => {
                     <div className="text-column">
                         <h2 data-reveal>{passions.title}</h2>
                         {passions.paragraphs.map((text, idx) => (
-                            <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>{text}</p>
+                            <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>
+                                {renderHighlightedParagraph(text, sectionHighlights.passions)}
+                            </p>
                         ))}
                     </div>
                     <div className="image-panel" data-reveal>
@@ -105,7 +146,9 @@ const DOMContent: React.FC = () => {
                     <div className="text-column">
                         <h2 data-reveal>{beauty.title}</h2>
                         {beauty.paragraphs.map((text, idx) => (
-                            <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>{text}</p>
+                            <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>
+                                {renderHighlightedParagraph(text, sectionHighlights.beauty)}
+                            </p>
                         ))}
                     </div>
                     <div className="image-panel" data-reveal>
@@ -119,7 +162,9 @@ const DOMContent: React.FC = () => {
                     <div className="text-column">
                         <h2 data-reveal>{brand.title}</h2>
                         {brand.paragraphs.map((text, idx) => (
-                            <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>{text}</p>
+                            <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>
+                                {renderHighlightedParagraph(text, sectionHighlights.brand)}
+                            </p>
                         ))}
                     </div>
                     <div className="image-panel" data-reveal>
@@ -139,7 +184,7 @@ const DOMContent: React.FC = () => {
                             </div>
                             <div className="list-block" data-reveal style={{ transitionDelay: '0.2s' }}>
                                 <h3>{strengthsWeaknesses.weakness.label}</h3>
-                                <p>{strengthsWeaknesses.weakness.text}</p>
+                                <p>{renderHighlightedParagraph(strengthsWeaknesses.weakness.text, sectionHighlights.strengths)}</p>
                             </div>
                         </div>
                     </div>
@@ -151,7 +196,9 @@ const DOMContent: React.FC = () => {
                     <div className="text-column">
                         <h2 data-reveal>{memory.title}</h2>
                         {memory.paragraphs.slice(0, 2).map((text, idx) => (
-                            <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>{text}</p>
+                            <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>
+                                {renderHighlightedParagraph(text, sectionHighlights.memory)}
+                            </p>
                         ))}
 
                         <div className="closing-links">
