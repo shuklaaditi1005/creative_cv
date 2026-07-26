@@ -294,11 +294,12 @@ section.is-visible::after {
 
 .hero-bottom .desc {
     flex: 1 1 auto;
-    font-size: 0.92rem;
     line-height: 1.6;
     white-space: normal;
     overflow: visible;
     text-overflow: unset;
+    font-size: 0.95rem;
+    font-weight: 700;
 }
 
 .hero-bottom .year {
