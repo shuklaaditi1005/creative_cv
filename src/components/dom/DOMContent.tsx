@@ -97,10 +97,15 @@ const DOMContent: React.FC = () => {
                     <span className="logo-separator">|</span>
                     <img className="brand-logo" src={imagePaths.lorealLogo} alt="L'Oréal logo" />
                 </div>
-                <div className="hero-sub" data-reveal>
-                    <div className="hero-left">
-                        <div className="name">{hero.name}</div>
-                        <div className="role">{hero.role}</div>
+                <div className="hero-content-wrapper" data-reveal>
+                    <div className="hero-sub">
+                        <div className="hero-left">
+                            <div className="name">{hero.name}</div>
+                            <div className="role">{hero.role}</div>
+                        </div>
+                    </div>
+                    <div className="hero-center">
+                        <img className="hero-center-image" src={imagePaths.self} alt="Aditi Shukla" />
                     </div>
                 </div>
                 <div className="hero-bottom" data-reveal>
