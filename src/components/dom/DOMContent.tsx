@@ -57,6 +57,7 @@ const DOMContent: React.FC = () => {
                 <div className="hero-badge" data-reveal>A Creative CV</div>
                 <div className="hero-top-right" data-reveal>
                     <img className="brand-logo" src={imagePaths.nmimsLogo} alt="NMIMS logo" />
+                    <span className="logo-separator">|</span>
                     <img className="brand-logo" src={imagePaths.lorealLogo} alt="L'Oréal logo" />
                 </div>
                 <div className="hero-sub" data-reveal>
