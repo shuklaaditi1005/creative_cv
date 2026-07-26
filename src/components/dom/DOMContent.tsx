@@ -123,7 +123,7 @@ const DOMContent: React.FC = () => {
 
             <section id="strengths">
                 <div className="grid-layout">
-                    <div className="text-column" style={{ gridColumn: '1 / -1', maxWidth: '900px' }}>
+                    <div className="text-column" style={{ gridColumn: '1 / -1' }}>
                         <h2 data-reveal>{strengthsWeaknesses.title}</h2>
                         <div className="skills-tools-grid">
                             <div className="list-block" data-reveal style={{ transitionDelay: '0.1s' }}>
