@@ -86,7 +86,9 @@ const DOMContent: React.FC = () => {
                             <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>{text}</p>
                         ))}
                     </div>
-                    <div />
+                    <div className="image-panel" data-reveal>
+                        <img className="about-image" src={`${import.meta.env.BASE_URL}images/passion.jpeg`} alt="Passion illustration" />
+                    </div>
                 </div>
             </section>
 
@@ -133,10 +135,10 @@ const DOMContent: React.FC = () => {
             </section>
 
             <section id="memory">
-                <div className="grid-layout">
+                <div className="grid-layout memory-grid">
                     <div className="text-column">
                         <h2 data-reveal>{memory.title}</h2>
-                        {memory.paragraphs.map((text, idx) => (
+                        {memory.paragraphs.slice(0, 2).map((text, idx) => (
                             <p key={idx} data-reveal style={{ transitionDelay: `${0.08 * (idx + 1)}s` }}>{text}</p>
                         ))}
 
@@ -149,7 +151,16 @@ const DOMContent: React.FC = () => {
                             ))}
                         </div>
                     </div>
-                    <div />
+                    <div className="memory-panel" data-reveal>
+                        <div className="memory-card">
+                            <h3>Standout Moment</h3>
+                            <p>{memory.paragraphs[2]}</p>
+                        </div>
+                        <div className="memory-card">
+                            <h3>What I Carry Forward</h3>
+                            <p>{memory.paragraphs[3]}</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
